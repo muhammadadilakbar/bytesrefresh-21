@@ -22,30 +22,30 @@ Tags: two-columns, right-sidebar, accessibility-ready, featured-images, post-for
 /* Text meant only for screen readers. */
 
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px, 1px, 1px, 1px);
   width: 1px;
-	height: 1px;
-	overflow: hidden;
-	position: absolute !important;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
-	background-color: white;
-	clip: auto !important;
-	color: black;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: 700;
+  background-color: white;
+  clip: auto !important;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
   width: auto;
-	height: auto;
-	left: 5px;
+  height: auto;
+  left: 5px;
   top: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	z-index: 100000; /* Above WP toolbar. */
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  z-index: 100000; /* Above WP toolbar. */
 }
 
 /*--------------------------------------------------------------
@@ -275,13 +275,13 @@ img, video {
 /* SVG Icons base styles */
 
 .icon {
-	display: inline-block;
-	fill: currentColor;
-	height: 1em;
-	vertical-align: middle;
-	width: 1em;
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  vertical-align: middle;
+  width: 1em;
   position: relative; /* Align more nicely with capital letters */
-	top: -0.0625rem;
+  top: -0.0625rem;
 }
 
 /*--------------------------------------------------------------
