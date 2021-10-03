@@ -1,0 +1,427 @@
+/*
+Theme Name: BytesRefresh
+Theme URI: https://www.bytesrefresh.com
+Author: Muhammad Adil Akbar
+Author URI: https://www.bytesrefresh.com
+Description: This theme is designed and developed by Muhammad Adil Akbar.
+Version: 1.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bytesrefresh
+Tags: two-columns, right-sidebar, accessibility-ready, featured-images, post-formats, threaded-comments, translation-ready
+*/
+
+/* Inspired by Twenty Seventeen theme. */
+
+/*--------------------------------------------------------------
+  Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: white;
+	clip: auto !important;
+	color: black;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 700;
+  width: auto;
+	height: auto;
+	left: 5px;
+  top: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/*--------------------------------------------------------------
+  Typography
+--------------------------------------------------------------*/
+
+html {
+  font-size: 14px;
+  font-size: 0.875em;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+h4, h5, h6 {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+article {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+/*--------------------------------------------------------------
+  Forms
+--------------------------------------------------------------*/
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+  width: 70%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+  Links
+--------------------------------------------------------------*/
+
+a {
+  color: black;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+figure a {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+  Layout - Header
+--------------------------------------------------------------*/
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.site-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.site-title a { /* Specificity of this selector: 0 1 1 */
+  text-decoration: none;
+}
+
+.site-title a:hover { /* Specificity of this selector: 0 2 1 */
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+  Layout - Posts
+--------------------------------------------------------------*/
+
+.entry-header a {
+  text-decoration: none;
+}
+
+.entry-header a:hover {
+  text-decoration: underline;
+}
+
+.entry-meta {
+  margin-bottom: 1rem;
+}
+
+.navigation.pagination {
+  padding-bottom: 1rem;
+  margin: 1rem 0;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+}
+
+.page-numbers {
+  margin: 0 1rem;
+}
+
+.nav-links .prev {
+  margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+  Layout - Footer
+--------------------------------------------------------------*/
+
+#site-footer {
+  grid-column: 1 / span 2;
+  margin: 1rem;
+  justify-self: center;
+}
+
+/*--------------------------------------------------------------
+  Comments
+--------------------------------------------------------------*/
+
+.comments-area {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.comment-author.vcard .avatar {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+  Widgets
+--------------------------------------------------------------*/
+
+.widget {
+  margin-bottom: 1rem;
+}
+
+.widget-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.widget ul {
+  list-style: none;
+  padding: 0
+}
+
+.widget ul li {
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid black;
+}
+
+.widget ul li span.post-date {
+  display: none;
+}
+
+.widget ul li a {
+  text-decoration: none;
+}
+
+.widget ul li a:hover {
+  text-decoration: underline;
+}
+
+.widget_search, .widget_custom_html {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+/*--------------------------------------------------------------
+  Media
+--------------------------------------------------------------*/
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* SVG Icons base styles */
+
+.icon {
+	display: inline-block;
+	fill: currentColor;
+	height: 1em;
+	vertical-align: middle;
+	width: 1em;
+  position: relative; /* Align more nicely with capital letters */
+	top: -0.0625rem;
+}
+
+/*--------------------------------------------------------------
+  Media Queries
+--------------------------------------------------------------*/
+
+@media screen and ( max-width: 59.9375em ) /* 959px */
+{
+  #page {
+    display: block;
+    max-width: 40rem; /* 560px */
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  #primary, #secondary {
+    margin: 1rem;
+  }
+
+  /* Layout - Header */
+
+  .site-title  {
+    text-align: center;
+  }
+
+  /* Main Navigation */
+
+  .main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid black;
+    width: max-content;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .menu-toggle .icon {
+    margin-right: 3px;
+    top: -1px;
+  }
+
+  .main-navigation > div {
+    display: none;
+  }
+
+  .main-navigation ul {
+    padding-left: 2rem;
+  }
+  
+  .main-navigation .menu-item-has-children > a > .icon {
+    display: none;
+  }
+
+  .main-navigation.toggled-on > div {
+    display: block;
+    align-self: flex-start;
+  }
+
+  .toggled-on .menu-toggle .icon-bars,
+  .menu-toggle .icon-close {
+    display: none;
+  }
+
+  .toggled-on .menu-toggle .icon-close {
+    display: inline-block;
+  }
+}
+
+@media screen and ( min-width: 60em ) /* 960px */
+{
+  #page {
+    display: grid;
+    grid-template-columns: 45.14286rem 23.42857143rem; /* 632px 328px */
+    justify-content: center;
+  }
+
+  #primary, #secondary {
+    margin: 0.5rem 1rem 1rem 1rem;
+  }
+
+  /* Main Navigation */
+
+  .main-navigation a {
+    text-decoration: none;
+  }
+
+  .main-navigation a:hover {
+    text-decoration: underline;
+  }
+
+  .main-navigation > div > ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation ul ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0rem;
+    top: 100%;
+    background-color: white;
+    border: 1px solid black;
+    height: 10rem;
+    width: min-content;
+    padding: 0.5rem;
+  }
+
+  .main-navigation > div > ul > li {
+    position: relative;
+    padding: 0 0.5rem;
+  }
+
+  .main-navigation > div > ul > li:first-child {
+    padding-left: 0;
+  }
+
+  .main-navigation .menu-item-has-children:hover ul.sub-menu {
+    display: unset;
+  }
+
+  .main-navigation .menu-item-has-children > a > .icon {
+    display: inline;
+    position: relative;
+    left: 2px;
+    top: -1px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
