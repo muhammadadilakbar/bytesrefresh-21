@@ -6,7 +6,7 @@ Author URI: https://www.bytesrefresh.com
 Description: This theme is designed and developed by Muhammad Adil Akbar.
 Version: 1.0
 Requires at least: 4.7
-Requires PHP: 5.2.4
+Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bytesrefresh
@@ -166,6 +166,14 @@ figure a {
 /*--------------------------------------------------------------
   Layout - Posts
 --------------------------------------------------------------*/
+
+h1.entry-title, h2.entry-title {
+  margin-bottom: 0.5rem;
+}
+
+.entry-header .entry-meta {
+  font-style: italic;
+}
 
 .entry-header a {
   text-decoration: none;

@@ -44,7 +44,7 @@ add_action( 'widgets_init', 'bytesrefresh_widgets_init' );
 
 function bytesrefresh_scripts()
 {
-    wp_enqueue_style( 'bytesrefresh-style', get_stylesheet_uri(), array(), '20210929' );
+    wp_enqueue_style( 'bytesrefresh-style', get_stylesheet_uri(), array(), '20220516' );
     wp_enqueue_script( 'bytesrefresh-main-navigation-script', get_template_directory_uri() . '/assets/js/navigation.js', array(), '1.0.0', true );
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
     {
