@@ -432,7 +432,7 @@ img, video {
     background-color: white;
     border: 1px solid black;
     height: 10rem;
-    width: min-content;
+    width: max-content;
     padding: 0.5rem;
   }
 
